@@ -18,21 +18,12 @@ public class SecondLargestElement {
     }
 
     public static int secondLargeElement(int arr[]){
+
         Arrays.sort(arr);
-
-        int max = arr[0];
-        int secondLarge =arr[0];
-        for(int i = 1; i<arr.length; i++){
-            if (arr[i]>max) {
-                max= arr[i];
-            }
-            max= arr[i-1];
-            secondLarge = max;
-
-        }
-        return secondLarge;
-    }
-
-
+        int res =  arr[arr.length-2];
     
-}
+        return res;
+        
+    }
+}    
+    
