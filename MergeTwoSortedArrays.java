@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MergeTwoSortedArrays {
@@ -60,6 +61,8 @@ public class MergeTwoSortedArrays {
             j++;
             k++;
         }
+
+        Arrays.sort(mergedArray);
 
         return mergedArray;
     }
