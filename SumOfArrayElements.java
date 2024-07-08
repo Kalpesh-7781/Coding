@@ -22,9 +22,7 @@ public class SumOfArrayElements {
             // for (int j = 0; j < arr.length; j++) {
                 sum= sum + arr[i];
             }
-            
-        
-        return sum;
+            return sum;
 
     }
 }
