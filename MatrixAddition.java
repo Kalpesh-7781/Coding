@@ -36,7 +36,7 @@ public class MatrixAddition {
         System.out.println("Addition of two matrix is :");
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
-                System.out.println(add[i][j]+" ");
+                System.out.print(add[i][j]+" ");
             }
             System.out.println();
         }
