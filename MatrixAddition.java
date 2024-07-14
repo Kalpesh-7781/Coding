@@ -38,6 +38,7 @@ public class MatrixAddition {
             for(int j=0;j<cols;j++){
                 System.out.println(add[i][j]+" ");
             }
+            System.out.println();
         }
         sc.close();
     }
