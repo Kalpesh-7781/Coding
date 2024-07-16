@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MatrixMultiplication {
+public class TransposeOfMatrix{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter rows:");
@@ -10,8 +10,6 @@ public class MatrixMultiplication {
 
         int m1 [][]= new int [rows][cols];
         int m2 [][]= new int [rows][cols];
-        int mul[][]=new int[rows][cols];
-
 
         System.out.println("Enter matrix 1:");
         for(int i=0;i<rows;i++){
@@ -20,30 +18,30 @@ public class MatrixMultiplication {
             }
         }
 
-        System.out.println("Enter Matrix 2:");
+        System.out.println("Entered matrix :");
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
-                m2[i][j]=sc.nextInt();
+                System.out.print(m1[i][j]+" "); 
             }
+            System.out.println();
         }
+
 
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
-                mul[i][j]=0;
-                for (int k = 0; k < cols; k++) {
-                    mul[i][j] += m1[i][k] * m2[k][j];
-                }
+                
+                    m2[i][j] += m1[j][i];
+                
             }
         }
 
-        System.out.println("Addition of two matrix is :");
+        System.out.println("Transpose of matrix is :");
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
-                System.out.print(mul[i][j]+" ");
+                System.out.print(m2[i][j]+" ");
             }
             System.out.println();
         }
         sc.close();
     }
-    
 }
