@@ -13,7 +13,7 @@ public class Swap {
         y = x-y;
         x = x-y;
 
-        System.out.println("Before swap: " +x +" ,"+y  );
+        System.out.println("After swap: " +x +" ,"+y  );
 
     }
 }
